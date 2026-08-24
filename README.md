@@ -87,23 +87,7 @@ The report relies on a handful of calculated columns and measures to do the anal
 - `Total_Quantity`
 - `Nutrition Value`
 - `Item Rank by Period`
-
-The one worth calling out is the **Time Period** column, which buckets each transaction based on the hour it happened:
-
-```DAX
-Time Period =
-VAR SaleHour = HOUR('starbucks sales'[datetime])
-RETURN
-    SWITCH(
-        TRUE(),
-        SaleHour >= 6 && SaleHour < 12, "Morning",
-        SaleHour >= 12 && SaleHour < 17, "Afternoon",
-        SaleHour >= 17 && SaleHour < 22, "Evening",
-        "Other"
-    )
-```
-
-That's what powers the time-of-day breakdowns in the sales dashboard.
+- `Time Period`
 
 ## Dashboards
 
