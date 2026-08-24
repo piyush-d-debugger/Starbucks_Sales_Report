@@ -75,7 +75,7 @@ customers
 
 A few extra supporting tables were added in Power BI for measures and nutrition calculations.
 
-## DAX and measures
+## DAX measures
 
 The report relies on a handful of calculated columns and measures to do the analytical work:
 
