@@ -19,7 +19,7 @@ Goes beyond a single dashboard and actually connect sales data with customer and
 
 ## The data
 
-Everything lives in a MySQL database called `Starbucks`, split across three tables:
+Everything lives in a MySQL database split across three tables:
 
 **`customers`** — who's buying
 | Column | Description |
